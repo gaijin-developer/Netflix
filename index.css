@@ -1,0 +1,143 @@
+html,body{
+    background-color: rgb(7, 0, 41);
+    color:white;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* to be removed later */
+
+
+/* Main page container starts here here */
+.total-page-container{
+display: grid;
+grid-template-columns: 1fr;
+}
+
+.top-half-container{
+    background: linear-gradient(
+        to right,
+        rgba(7, 0, 41,1),
+        rgba(7, 0, 41,0.5),
+        rgba(7, 0, 41,0.3)),
+        linear-gradient(
+        to bottom,
+        rgba(7, 0, 41,0.3),
+        rgba(7, 0, 41,0.5),
+        rgba(7, 0, 41,1)),
+        url('./photos/netflix.jpg');
+}
+
+/* header area starts here */
+header{
+    display:flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    padding:.5rem;
+}
+
+.banner-container{
+    margin-left: 1rem;
+    padding:.5rem;
+    background-blend-mode:overlay;
+    width:5rem;
+    height:2rem;
+}
+
+.netflix-banner{
+width:100%;
+outline: 2px solid white;
+}
+
+.languageAndSignInButton{
+    display:flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    margin-right:1rem;
+    padding:.5rem;
+}
+
+.signIn-button{
+background-color: red;
+padding:.5rem 1rem;
+border-radius: 5px;
+font-weight: 600;
+}
+
+.language-container{
+    padding:0rem;
+
+}
+select{
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.2);
+    color:white;
+    border-radius: 5px;
+    
+}
+
+
+/* text section container */
+.text-section-container{
+    margin:2rem 3rem;
+}
+
+.main-text{
+font-size: 3rem;
+}
+
+.email-and-login-container{
+    border:5px solid linear-gradient(
+        rgba(45,44,32,1),
+        rgba(45,44,32,1),
+        rgba(45,44,32,1)
+    );
+    border: 2px solid linear-gradient(to right,blue);
+}
+
+.ready-to-watch{
+    font-size: 1.2rem;
+    
+}
+.card-text-container{
+    margin: 0 2rem;
+}
+
+.card-text h2{
+    font-size: 2rem;
+}
+/* cards container styling */
+.cards-container{
+display:grid;
+grid-template-columns: 1fr;
+
+border-radius: 5px;
+background: linear-gradient(
+        to right,
+        rgba(27, 0, 161, 0.3),
+        rgba(27, 0, 161, 0.3),
+        rgba(5, 0, 31, 0.3)
+        ),
+        
+        linear-gradient(
+        to bottom,
+        rgba(27, 0, 161, 0.3),
+        rgba(27, 0, 161, 0.3),
+        rgba(2, 0, 14, 1)
+        )
+        ;
+        margin:0 2rem;
+}
+
+.card{
+margin:1rem auto;
+min-height: 10rem;
+width:100%;
+display:flex;
+flex-direction: column;
+}
+
+.card-image{
+    width:100%;
+}
