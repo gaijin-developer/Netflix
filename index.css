@@ -47,7 +47,6 @@ header{
 
 .netflix-banner{
 width:100%;
-outline: 2px solid white;
 }
 
 .languageAndSignInButton{
@@ -84,28 +83,64 @@ select{
 }
 
 .main-text{
-font-size: 3rem;
+font-size: 2.4rem;
+margin:5rem 0 1rem 0;
+}
+
+.subtextsContainer{
+    margin:0rem 0 1rem 0;
 }
 
 .email-and-login-container{
-    border:5px solid linear-gradient(
-        rgba(45,44,32,1),
-        rgba(45,44,32,1),
-        rgba(45,44,32,1)
-    );
-    border: 2px solid linear-gradient(to right,blue);
+    outline: 3px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding:0.5em 1em 1em 1em;
+    background-color: rgba(6, 0, 36, 0.89);
+
 }
 
 .ready-to-watch{
     font-size: 1.2rem;
-    
+    font-weight: 100;
 }
+
 .card-text-container{
     margin: 0 2rem;
 }
 
-.card-text h2{
+.card-text-container h2{
     font-size: 2rem;
+}
+.card-text-container h4{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.input-container{
+margin:1rem 0px;
+outline:1px solid white;
+}
+
+.email-input{
+background-color: rgb(14, 13, 13);
+color:white;
+font-size: 1rem;
+padding:1rem;
+border:none;
+border-radius: 5px;
+outline:1px solid green;
+width:100%;
+
+}
+.get-started-button{
+    background: linear-gradient(to right,rgb(214, 4, 4),red,rgb(207, 1, 1));
+    font-size:1.2rem;
+    color:white;
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border: none;
 }
 /* cards container styling */
 .cards-container{
@@ -113,31 +148,89 @@ display:grid;
 grid-template-columns: 1fr;
 
 border-radius: 5px;
-background: linear-gradient(
-        to right,
-        rgba(27, 0, 161, 0.3),
-        rgba(27, 0, 161, 0.3),
-        rgba(5, 0, 31, 0.3)
-        ),
-        
-        linear-gradient(
-        to bottom,
-        rgba(27, 0, 161, 0.3),
-        rgba(27, 0, 161, 0.3),
-        rgba(2, 0, 14, 1)
-        )
-        ;
+background-color:hwb(250 0% 79% / 0.89);
         margin:0 2rem;
 }
 
 .card{
-margin:1rem auto;
+margin:1rem 1rem;
+padding-bottom: 1rem;
 min-height: 10rem;
-width:100%;
+/* width:100%; */
 display:flex;
 flex-direction: column;
+border-bottom: 1px solid rgb(94, 93, 93);
+box-sizing: border-box;
+
 }
 
 .card-image{
     width:100%;
+}
+
+hr{
+    width:90%;
+    height:0.1px;
+}
+
+/* Questtions and Footer Section */
+.second-email-and-login-container{
+    border:none;
+    margin:2.5rem;
+}
+
+
+.faq-heading{
+    box-sizing: border-box;
+    margin:1rem 3rem 1rem 3rem;
+    box-sizing: 1px solid white;
+    margin-left: 2.5rem;
+}
+
+.list-item{
+    list-style: none;
+    background-color: rgb(24, 24, 77);
+    margin:.5rem 0;
+    font-size: 1.1rem;
+    margin:1rem 3rem 1rem 0rem;
+    padding:1.5rem 1rem;
+}
+
+.extra-question{
+    margin:5rem 2.5rem 3rem 2.5rem;
+    color:rgb(185, 175, 175);
+
+}
+
+.contact-number{
+    color:rgb(185, 175, 175);
+}
+
+
+/* footer and links */
+.footer-link{
+list-style: none;
+margin:1rem 0rem;
+text-decoration: underline;
+color:rgb(185, 175, 175);
+font-size:0.9em;
+}
+
+.footer-language-container{
+    margin: 3rem 0 0 2.5rem;
+}
+
+#footer-select{
+    background: rgba(0,0,0,0.5);
+    padding:0.5rem 2rem;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+.footer-Netflix-container{
+    margin:3rem 0;
+}
+
+.footer-Netflix{
+    margin-left: 2.5rem;
 }
