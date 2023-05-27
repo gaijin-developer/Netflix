@@ -15,17 +15,7 @@ grid-template-columns: 1fr;
 }
 
 .top-half-container{
-    background: linear-gradient(
-        to right,
-        rgba(7, 0, 41,1),
-        rgba(7, 0, 41,0.5),
-        rgba(7, 0, 41,0.3)),
-        linear-gradient(
-        to bottom,
-        rgba(7, 0, 41,0.3),
-        rgba(7, 0, 41,0.5),
-        rgba(7, 0, 41,1)),
-        url('./photos/netflix.jpg');
+    
 }
 
 /* header area starts here */
@@ -79,30 +69,41 @@ select{
 
 /* text section container */
 .text-section-container{
-    margin:2rem 3rem;
+    margin:0 1.5rem 3rem 1.5rem;
+    padding:0 1rem;
+    background: linear-gradient(
+        to bottom,
+        rgba(7, 0, 41,0.6),
+        rgba(7, 0, 41,0.7)),
+        url('./photos/netflix.jpg');
+        border-radius: 1rem;
 }
 
 .main-text{
 font-size: 2.4rem;
-margin:5rem 0 1rem 0;
+margin:1rem 0rem 0rem 0rem;
+padding-top: 2rem;
 }
 
 .subtextsContainer{
-    margin:0rem 0 1rem 0;
+
 }
 
 .email-and-login-container{
-    outline: 3px solid white;
     border-radius: 5px;
     box-sizing: border-box;
-    padding:0.5em 1em 1em 1em;
-    background-color: rgba(6, 0, 36, 0.89);
+    padding:0.5em 0em 1em 0em;
+
+}
+
+.watch-anywhere{
 
 }
 
 .ready-to-watch{
     font-size: 1.2rem;
     font-weight: 100;
+    line-height: 2rem;
 }
 
 .card-text-container{
@@ -110,7 +111,7 @@ margin:5rem 0 1rem 0;
 }
 
 .card-text-container h2{
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .card-text-container h4{
     font-size: 1rem;
@@ -123,13 +124,13 @@ outline:1px solid white;
 }
 
 .email-input{
-background-color: rgb(14, 13, 13);
+background-color: rgba(14, 13, 13,0.2);
 color:white;
 font-size: 1rem;
 padding:1rem;
 border:none;
 border-radius: 5px;
-outline:1px solid green;
+
 width:100%;
 
 }
@@ -142,18 +143,21 @@ width:100%;
     border-radius: 5px;
     border: none;
 }
+
+.button-container{
+margin-bottom: 2rem;
+}
 /* cards container styling */
 .cards-container{
 display:grid;
 grid-template-columns: 1fr;
-
 border-radius: 5px;
 background-color:hwb(250 0% 79% / 0.89);
-        margin:0 2rem;
+margin:0 2rem;
 }
 
 .card{
-margin:1rem 1rem;
+margin:1rem 0rem;
 padding-bottom: 1rem;
 min-height: 10rem;
 /* width:100%; */
@@ -179,6 +183,9 @@ hr{
     margin:2.5rem;
 }
 
+.faq{
+    margin-top: 3rem;
+}
 
 .faq-heading{
     box-sizing: border-box;
@@ -233,4 +240,68 @@ font-size:0.9em;
 
 .footer-Netflix{
     margin-left: 2.5rem;
+}
+
+@media (min-width: 768px){
+    .card{
+        margin:1rem 0rem;
+        padding-bottom: 1rem;
+        min-height: 10rem;
+        /* width:100%; */
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid rgb(94, 93, 93);
+        box-sizing: border-box;
+        
+        }
+
+.faq-links{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+        }
+}
+
+@media (min-width: 960px){
+    .card{
+        margin:1rem 0rem;
+        padding-bottom: 1rem;
+        min-height: 10rem;
+        /* width:100%; */
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid rgb(94, 93, 93);
+        box-sizing: border-box;
+        
+        }
+
+.faq-links{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+        }
+}
+
+@media (min-width: 1290px){
+    .card{
+        margin:1rem 5rem;
+        padding-bottom: 1rem;
+        min-height: 10rem;
+        /* width:100%; */
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(94, 93, 93);
+        box-sizing: border-box;
+        }
+
+.faq-links{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+        }
+
+.card-text-container h2{
+font-size: 3rem;
+}
 }
